@@ -28,7 +28,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 1 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -37,7 +37,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 2 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -46,7 +46,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 3 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -55,7 +55,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 4 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -64,7 +64,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 4 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -73,7 +73,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 6 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -82,7 +82,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 7 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -91,7 +91,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 8 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -100,7 +100,7 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 9 loaded');
-    return wait(2);
+    return wait(3);
   })
   .then(() => {
     currentImg.style.display = 'none';
@@ -109,6 +109,6 @@ createImage('img/img1.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 10 loaded');
-    return wait(2);
+    return wait(3);
   })
   .catch(err => console.error(err));
