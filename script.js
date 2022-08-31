@@ -4,42 +4,111 @@ const wait = function (seconds) {
   });
 };
 
-const imgContainer = document.querySelector(".images");
+const imgContainer = document.querySelector('.images');
 
 const createImage = function (imgPath) {
   return new Promise(function (resolve, reject) {
-    const img = document.createElement("img");
+    const img = document.createElement('img');
     img.src = imgPath;
 
-    img.addEventListener("load", function () {
+    img.addEventListener('load', function () {
       imgContainer.append(img);
       resolve(img);
     });
 
-    img.addEventListener("error", function () {
-      reject(new Error("Image not found"));
+    img.addEventListener('error', function () {
+      reject(new Error('Image not found'));
     });
   });
 };
 
 let currentImg;
 
-createImage("img/img1.jpg")
-  .then((img) => {
+createImage('img/img1.jpg')
+  .then(img => {
     currentImg = img;
-    console.log("Image 1 loaded");
+    console.log('Image 1 loaded');
     return wait(2);
   })
   .then(() => {
-    currentImg.style.display = "none";
-    return createImage("img/img2.jpg");
+    currentImg.style.display = 'none';
+    return createImage('img/img2.jpg');
   })
-  .then((img) => {
+  .then(img => {
     currentImg = img;
-    console.log("Image 2 loaded");
+    console.log('Image 2 loaded');
     return wait(2);
   })
   .then(() => {
-    currentImg.style.display = "none";
+    currentImg.style.display = 'none';
+    return createImage('img/img3.jpg');
   })
-  .catch((err) => console.error(err));
+  .then(img => {
+    currentImg = img;
+    console.log('Image 3 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img4.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 4 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img5.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 4 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img6.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 6 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img7.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 7 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img8.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 8 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img9.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 9 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img10.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 10 loaded');
+    return wait(2);
+  })
+  .catch(err => console.error(err));
